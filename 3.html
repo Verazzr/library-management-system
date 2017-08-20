@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.css" />
+	<style type="text/css">
+		*{ margin: 0; padding: 0 }
+		html,body{ width: 100%; height: 100%; background-image: url(background.jpg); background-position: right; }
+		h1{
+			text-align: center;
+		}
+		#borrow,#content{
+			margin: 0 auto;
+			width: 800px; height: 200px;
+			border:2px solid;
+			border-radius: 10px;
+		}
+		#btn_4,#book{
+			margin: 5px; 
+			width: 110px; height: 35px;
+			background-color: #333; color: #fff;
+			border:1px solid #888;
+			border-radius: 5px;
+		}
+		#button{
+			margin: 0 auto;
+			width: 800px; height: 50px;
+			text-align: center;
+		}
+		#content{
+			height: 300px;
+		}
+		#tab,#tab_1{
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>welcome</h1>
+	<div id="borrow"><table id="tab" border=1></table></div>
+	<div id="button">
+		<button id="book">图书</button>
+		<button id="btn_4">搜索</button>
+	</div>
+	<div id="content"><table id="tab_1" border=1></table></div>
+
+	<div id="dialog_4" style="display:none;">
+			<input type="text" name="u" size="10" id="u4" placeholder="输入书名"><br><br>
+			<button type="button" id="fromGo_4" style="width:80px; height:30px;">确定</button>
+    </div>
+</body>
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.js"></script>
+<script src="cookie/jquery.cookie.js"></script>
+<script type="text/javascript" src="3.js"></script>
+<script type="text/javascript" src="dialog.js"></script>
+</html>
